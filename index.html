@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Евгений и Дарья — 22.08.26</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="top-bar">
+    <span>22.08.26</span>
+    <span>г. Казань</span>
+  </header>
+
+  <section class="hero">
+    <h1 class="script-lg names">
+      <span class="name name-1">Евгений</span>
+      <span class="and">и</span>
+      <span class="name name-2">Дарья</span>
+    </h1>
+    <div class="hero-illustration">
+      <img src="images/couple-dog.png" alt="Пара с собакой" onerror="this.style.display='none'">
+    </div>
+  </section>
+
+  <section class="intro reveal">
+    <h2 class="script-md">Наши самые близкие!</h2>
+    <p>
+      Мы очень хотим разделить этот<br>
+      особенный день с вами.<br>
+      и приглашаем стать свидетелями<br>
+      новой главы нашей любви.
+    </p>
+    <div class="divider">♥</div>
+  </section>
+
+  <section class="plan reveal">
+    <h2 class="script-lg">План дня</h2>
+    <div class="plan-illustration">
+      <img src="images/candles.png" alt="" onerror="this.style.display='none'">
+    </div>
+    <ul class="timeline">
+      <li>
+        <span class="time">15:30</span>
+        <div class="timeline-content">
+          <h3>Сбор гостей</h3>
+          <p>Встречаемся у ЗАГСа центр семьи «Казан».
+          Подготовимся к росписи и сделаем пару фото.</p>
+        </div>
+      </li>
+      <li>
+        <span class="time">16:00</span>
+        <div class="timeline-content">
+          <h3>Начало церемонии</h3>
+          <p>Самый трогательный момент вечера.
+          Готовьте платочки!</p>
+        </div>
+      </li>
+      <li>
+        <span class="time">17:30</span>
+        <div class="timeline-content">
+          <h3>Ужин в ресторане</h3>
+          <p>Камерный ужин в итальянском ресторане
+          с панорамным видом на всю Казань.</p>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <section class="dresscode reveal">
+    <h2 class="script-md">Дресс-код</h2>
+    <p>
+      Мы будем рады, если вы предпочтете<br>
+      пастельные приглушенные цвета в ваших<br>
+      нарядах. Черный и белый, пожалуйста,<br>
+      оставьте для невесты и жениха.
+    </p>
+    <div class="dresscode-illustration">
+      <img src="images/tableware.png" alt="" onerror="this.style.display='none'">
+    </div>
+  </section>
+
+  <section class="restaurant reveal">
+    <h2 class="script-md">Ресторан</h2>
+    <div class="restaurant-photo">
+      <img src="images/restaurant.png" alt="Ресторан Louis" onerror="this.style.display='none'">
+    </div>
+    <p>
+      "Louis" славится своей европейской<br>
+      и итальянской кухней, живой<br>
+      музыкой, видом на Казань, Казанский<br>
+      Кремль и набережную Казанки.
+    </p>
+    <p class="address">📍 ул. Алексея Козина, 3 (этаж 16)</p>
+  </section>
+
+  <footer class="outro reveal">
+    <h2 class="script-md">Ждем вас!</h2>
+    <p class="signature">С любовью, Женя и Даша.</p>
+    <div class="outro-illustration">
+      <img src="images/dog-pyramid.png" alt="" onerror="this.style.display='none'">
+    </div>
+    <p class="fine-print">
+      Если вам потребуется помощь в поиске жилья,<br>
+      обращайтесь к нам! Мы хорошо знаем Казань<br>
+      и поможем с выбором удобной локации<br>
+      для вашего комфортного проживания.
+    </p>
+  </footer>
+
+  <script>
+    const revealEls = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    revealEls.forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>
