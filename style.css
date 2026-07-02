@@ -48,12 +48,12 @@ body {
 }
 
 .script-lg {
-  font-size: clamp(2.4rem, 9.5vw, 4.5rem);
+  font-size: clamp(2.8rem, 11vw, 5.5rem);
   line-height: 1.2;
 }
 
 .script-md {
-  font-size: clamp(1.8rem, 7vw, 3rem);
+  font-size: clamp(2.2rem, 8vw, 3.6rem);
   line-height: 1.25;
 }
 
@@ -167,8 +167,8 @@ section h2 {
 }
 
 .timeline-content h3 {
-  color: var(--olive-dark);
-  font-weight: 600;
+  color: var(--olive);
+  font-weight: 700;
   font-size: 1.15rem;
   margin-bottom: 4px;
   text-transform: lowercase;
@@ -295,10 +295,10 @@ section h2 {
 
 @media (max-width: 600px) {
   .script-lg {
-    font-size: clamp(3.2rem, 13vw, 5.5rem);
+    font-size: clamp(3.6rem, 14vw, 6rem);
   }
   .script-md {
-    font-size: clamp(2.4rem, 9.5vw, 4rem);
+    font-size: clamp(2.8rem, 10.5vw, 4.6rem);
   }
 }
 
