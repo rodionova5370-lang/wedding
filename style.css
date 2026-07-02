@@ -88,10 +88,13 @@ section h2 {
 .hero .names {
   display: flex;
   flex-direction: column;
+  min-width: 0;
 }
 
 .hero .name {
   display: block;
+  min-width: 0;
+  max-width: 100%;
 }
 
 .hero .name-1 {
@@ -127,7 +130,7 @@ section h2 {
 .divider {
   margin-top: 24px;
   color: var(--olive);
-  font-size: 3rem;
+  font-size: 2.3rem;
 }
 
 /* Plan */
@@ -292,10 +295,10 @@ section h2 {
 
 @media (max-width: 600px) {
   .script-lg {
-    font-size: clamp(4.8rem, 19vw, 9rem);
+    font-size: clamp(3.2rem, 13vw, 5.5rem);
   }
   .script-md {
-    font-size: clamp(3.6rem, 14vw, 6rem);
+    font-size: clamp(2.4rem, 9.5vw, 4rem);
   }
 }
 
